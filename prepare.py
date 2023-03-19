@@ -1,5 +1,5 @@
 import env
-import acquire as acq
+import acquire as a
 import pandas as pd
 import matplotlib as plt
 import os
@@ -39,7 +39,7 @@ def telco_pre_split_clean(df):
 
 def telco_encoded_cleaned(df):
     '''
-    function takes in the output of the acquire.telco_pre_split_clean
+    function takes in the output of the telco_pre_split_clean
     and encodes all of the useful features for (pre-split) for (post-split)
     ML analysis.
     '''
@@ -65,7 +65,7 @@ def telco_encoded_cleaned(df):
     df = pd.concat( [df, dummy_df], axis=1 )
     return df
 
-def train_validate_test_split(df, target, seed=9751):
+def train_validate_test_split(df, target='churn', seed=9751):
     '''
     This function takes in a dataframe, the name of the target variable
     (for stratification purposes), and an integer for a setting a seed
@@ -83,3 +83,10 @@ def train_validate_test_split(df, target, seed=9751):
     return train, validate, test
 
 
+def wrangle_telco():
+    train, val, test = train_validate_test_split(
+        telco_encoded_cleaned(
+            telco_pre_split_clean(
+                a.get_telco_data())))
+        
+    return train, val, test

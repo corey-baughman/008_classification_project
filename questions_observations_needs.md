@@ -55,7 +55,7 @@ Needs:
 
 - DONE 6. customer_id field is irrelavent after importing to a DataFrame and could be detrimental during modeling so will drop.
 
-7. Features to Encode:
+- DONE 7. Features to Encode:
     gender, partner, dependents, phone_service, multiple_lines, online_security, online_backup, device_protection, tech_support, streaming_tv, streaming_movies, paperless_billing, contract_type, internet_service_type, payment_type
     
     

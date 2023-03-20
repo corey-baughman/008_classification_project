@@ -129,6 +129,47 @@ Almost a quarter of Telco customers seem to be on the cheapest plan at around $2
 
 **Bivariate Analysis**
 
+Gender v churn: there is a slightly higher churn among women in the test sample.
+
+Senior Citizen: Seniors churned at a much higher rate ~40% v ~23% for non-seniors
+
+Partner: People with partners churned at a much lower rate than people without. (~19% v ~33%)
+
+Dependents: People with dependents churned at a much lower rate than people without. (~15% v ~32%)
+
+Phone service: having phone service or not did not seem to be a significant driver of churn.
+
+Multiple lines: having multiple lines seemed to slightly increase churn.
+
+Online Security: having online_security significantly reduced churn (~ 41% v ~15%).
+
+Online Backup: having online backup significantly reduced churn (~40% v ~22%)
+
+Device Protection: having device protection significantly reduced churn (~40% v ~23%)
+
+Tech Support: having premium tech support significantly reduced churn (~42% v ~15%)
+
+Streaming TV: Customers who streamed TV over their Telco Internet churned slightly more than those who didn't.
+
+Streaming Movies: Customers who streamed movies over their Telco Internet churned slightly less than those who didn't.
+
+Paperless billing: Customers who used paperless billing churned significantly more than those who didn't (~34% v ~%16).
+
+Internet service type: Customers using fiber optic internet churned at a substantially higher rate than customers with DSL or No internet service (~42% v ~19% v ~7%)
+
+Contract Type: Customers on month-to-month contracts churned at far higher rates than people on one-year or two-year contracts (~43% v 10% v ~3%)
+
+Payment Type: Customers using the Electronic Check payment type churned at a much higher rate than those using other payment types.
+
+
+Takeaways from bivariate analysis: 
+Factors that reduce churn: 
+1. Contract type not monthly.
+2. Not using Fiber Optic Internet.
+3. Not being a senior.
+4. Not being solo.
+5. Using high cost-to-switch services.
+6. Not using pain-point services.
 
 
 

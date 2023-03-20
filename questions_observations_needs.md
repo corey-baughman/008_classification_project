@@ -63,3 +63,7 @@ Needs:
 Findings:
 - Even using the more lenient parameter of zero AND one months for tenure, there were 624 new contracts, compared with 1869 churns. It appears Telco is bleeding out fast. Without historical data, we can't verify this trend, but for January 2022 it is very concerning.
 
+biggest takeaways from the bivariate categoricals:
+- Why are seniors leaving at such a high rate?
+- Why are people without dependents or partners leaving at high rates?
+- Why are people without add-on services leaving at such a high rate?

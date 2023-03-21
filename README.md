@@ -1,3 +1,15 @@
+README
+
+Your README should contain all of the following elements:
+
+Title Gives the name of your project
+Project Description Describes what your project is and why it is important
+Project Goal Clearly states what your project sets out to do and how the information gained can be applied to the real world
+Initial Hypotheses Initial questions used to focus your project
+Project Plan Guides the reader through the different stages of the pipeline as they relate to your project
+Data Dictionary Gives a definition for each of the features used in your report and the units they are measured in, if applicable
+Steps to Reproduce Gives instructions for reproducing your work. i.e. Running your notebook on someone else's computer.x
+
 # 008_classification_project
 Repo for CodeUp Project Examining Customer Churn from a Set of Telco Data
 
@@ -163,13 +175,16 @@ Payment Type: Customers using the Electronic Check payment type churned at a muc
 
 
 Takeaways from bivariate analysis: 
-Factors that reduce churn: 
+
+Factors that reduce churn:
+
 1. Contract type not monthly.
 2. Not using Fiber Optic Internet.
 3. Not being a senior.
 4. Not being solo.
 5. Using high cost-to-switch services.
 6. Not using pain-point services.
+7. Tenure over six months.
 
 
 

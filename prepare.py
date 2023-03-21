@@ -28,8 +28,6 @@ def telco_pre_split_clean(df):
     df.drop(columns='signup_date', inplace=True)
 # customer_id field is irrelavent after importing to a DataFrame 
 # and could be detrimental during modeling so will drop.
-    df.drop(columns='customer_id', inplace=True)
-# churn month is not useful as this is data for only one month
     df.drop(columns='churn_month', inplace=True)
 # need to cast total_charges to float.
 # there are empty values for new customers which cannot be cast

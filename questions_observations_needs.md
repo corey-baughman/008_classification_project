@@ -67,3 +67,8 @@ biggest takeaways from the bivariate categoricals:
 - Why are seniors leaving at such a high rate?
 - Why are people without dependents or partners leaving at high rates?
 - Why are people without add-on services leaving at such a high rate?
+
+
+to do for production:
+
+add solo_cust, no_cost_to_switch, pain_points to prepare.telco_encoded_cleaned

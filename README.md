@@ -1,22 +1,27 @@
-README
 
-Your README should contain all of the following elements:
+# Telco Churn Project
 
-Title Gives the name of your project
-Project Description Describes what your project is and why it is important
-Project Goal Clearly states what your project sets out to do and how the information gained can be applied to the real world
-Initial Hypotheses Initial questions used to focus your project
-Project Plan Guides the reader through the different stages of the pipeline as they relate to your project
-Data Dictionary Gives a definition for each of the features used in your report and the units they are measured in, if applicable
-Steps to Reproduce Gives instructions for reproducing your work. i.e. Running your notebook on someone else's computer.x
-
-# 008_classification_project
 Repo for CodeUp Project Examining Customer Churn from a Set of Telco Data
 
-This is a CodeUp Data Science program to practice working through the whole data science pipeline for a Machine Learning classification problem. We were provided with a sql database of customer data from a Telecommunications Company. We have been tasked with analyzing the data to look for factors contributing to customer churn ('churn' is losing a customer).
+This is a CodeUp Data Science project to practice working through the whole data science pipeline for a Machine Learning classification problem. We were provided with a MySQL database of customer data from a Telecommunications Company. We have been tasked with analyzing the data to look for factors contributing to customer churn ('churn' is losing a customer).
 
 This dataset seems to have been created by IBM for exploratory purposes. There are updated versions of it that add more features. The following data dictionary is pulled from details here:
 https://community.ibm.com/community/user/businessanalytics/blogs/steven-macko/2019/07/11/telco-customer-churn-1113
+
+## Project Goal
+
+To find drivers of customer churn for Telco and also produce a machine learning model to help them identify customers who are likely to churn.
+
+## Initial Hypotheses
+
+- Monthly Costs are driving customer churn
+- Some Pain Point services are driving customer churn
+
+## Plan of Attack
+
+- Follow the steps of the Data Science Pipeline to methodically import, clean, explore, model, and present findings from this dataset in a way that provides value to stakeholders.
+
+## Data Dictionary
 
 Target variable: churn
 
@@ -75,6 +80,8 @@ contract_type: Indicates the customer’s current contract type: Month-to-Month,
 
 payment_type: Indicates how the customer pays their bill: Electronic Check, Mailed Check, Bank Transfer (automatic), Credit Card (automatic).  Dtype: object
 
+
+## Exploration
 
 **Univariate Feature Analysis Results:**
 
@@ -187,5 +194,21 @@ Factors that reduce churn:
 7. Tenure over six months.
 
 
+# Modeling
+
+I tested multiple random forest models and decision trees and was able to achieve accuracy of .79 and recall of .48
 
 
+## Steps to Reproduce Work
+
+download project repo here:
+https://github.com/corey-baughman/008_classification_project
+
+create a file called env.py in the directory where you put the files.
+The env.py file should contain this entry:
+
+host = 'data.codeup.com'
+user = 'your_username'
+password = 'your_password'
+
+replace 'your_username' and 'your_password' with your credentials to access the CodeUp mySQL server.

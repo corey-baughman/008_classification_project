@@ -14,6 +14,8 @@ def telco_pre_split_clean(df):
     '''
 # there are many duplicate columns all of which end in a 1 or 2
 # there are no other columns that end in a number.
+# drop duplicate columns with same names:
+    df = df.T.drop_duplicates().T
 # I will create a list of duplicate columns with a loop 
 # then I will feed that list to .drop()
     dup_cols = [col for col in df.columns if col.endswith(('1', '2'))]
